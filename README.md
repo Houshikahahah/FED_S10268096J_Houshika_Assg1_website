@@ -37,3 +37,10 @@ https://www.figma.com/design/64V4yGwsP16smc5AoDD2fv/J.Co-Donut?node-id=0-1&t=c7Y
 
 GitHub Link
 https://github.com/Houshikahahah/FED_S10268096J_Houshika_Assg1_website
+
+Resources:
+https://www.canva.com/design/DAGX1Vk9jJs/KK-TUsSHYqKdJdgzLxfUGw/edit?utm_content=DAGX1Vk9jJs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Photoshop
+Adobe Firefly
+
+
