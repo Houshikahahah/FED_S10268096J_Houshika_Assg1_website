@@ -1,0 +1,260 @@
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+.logo img {
+    max-height: 50px;
+}
+/* Logo Container */
+.logo {
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+}
+
+
+/* Navbar 1 (Logo & Main Links) */
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    font-weight: 600; /* Thicker font */
+}
+
+.logo img {
+    max-height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-left: 40px;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around; /* Evenly space the navigation links */
+}
+
+/* Individual Link Items */
+.nav-links li {
+    margin-right: 20px; /* Space between links */
+}
+
+/* Navigation Links Styles */
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 45px;
+}
+
+/* Active Link Styles */
+.nav-links a.active {
+    background-color: #ff6b00;
+    color: #fff;
+}
+  
+/* Main Content */
+/* Flexbox Layout */
+/* Flexbox Layout */
+.login-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fff;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add spacing between sections */
+}
+
+/* Default Order */
+.login-box {
+    width: 40%;
+    order: 1; /* Default order */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    color: #333;
+}
+
+.member-benefits {
+    width: 40%;
+    order: 2; /* Default order */
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: left;
+    color: #333;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align sections */
+    }
+
+    .login-box {
+        width: 100%;
+        order: 1; /* Ensure the login box stays first */
+    }
+
+    .member-benefits {
+        width: 100%;
+        order: 2; /* Ensure member benefits come second */
+    }
+
+    /* Adjust Image Sizes for Smaller Screens */
+    .logo-section img {
+        width: 120px; /* Shrink logo image */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits-icons img {
+        width: 60px; /* Reduce size of benefit icons */
+        height: 60px;
+    }
+
+    .app-buttons img {
+        width: 120px; /* Reduce size of app store images */
+        height: 40px;
+    }
+}
+
+  .logo-section {
+    margin-left: 0px; /* Adjust the value as needed */
+  }
+  
+  .logo-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 160px;
+  }
+  
+  .logo-subtitle {
+    font-size: 1rem;
+    color: #333;
+    margin-left: 151px;
+  }
+  
+  .logo-section img {
+    width: 150px;
+    margin-bottom: 1rem;
+    margin-left: 150px;
+  }
+
+  .login-form input {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #f2f2f2;
+    border: 2px solid #ff6b00;
+    border-radius: 10px;
+    margin-left: 50px;
+  }
+  
+  .options {
+    display: flex; /* Keep items in one line */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Add spacing between items */
+    margin-left: 0; /* Remove unnecessary left margin */
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.options input[type="checkbox"] {
+    width: 18px; /* Set a small, consistent width for the checkbox */
+    height: 18px; /* Set a small, consistent height for the checkbox */
+    margin: 0; /* Remove any extra margin */
+    cursor: pointer; /* Show a pointer cursor */
+}
+
+.options label {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9rem; /* Ensure consistent font size */
+    cursor: pointer; /* Make the label clickable */
+}
+
+.options a.forgot-password {
+    margin-left: auto; /* Push the link to the far right */
+    text-decoration: none; /* Remove underline from the link */
+    color: #007BFF; /* Use a standard link color */
+    font-size: 0.9rem;
+    cursor: pointer; /* Show a pointer cursor */
+}
+
+.options a.forgot-password:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+  
+  
+  .sign-in-btn, .join-now-btn {
+    width: 48%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .sign-in-btn {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+  }
+  
+  .join-now-btn {
+    background-color: #fff;
+    color: #ff6b00;
+    border: 2px solid #ff6b00;
+  }
+  
+  /* Member Benefits Section */
+  .member-benefits {
+    width: 40%;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: left;
+    color: #333;
+  }
+  
+  .member-benefits h3 {
+    color: #333;
+  }
+  
+  .member-benefits p {
+    font-size: 0.9rem;
+  }
+  
+  .benefits-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    gap: 20px
+  }
+  
+  .benefits-icons img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .app-buttons{
+    margin-top: 50px;
+  }
+  .app-buttons img {
+    width: 160px;
+    height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+  }

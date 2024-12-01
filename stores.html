@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.Co Donuts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stores.css">
+</head>
+<body>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  ></script>
+  
+
+  <header>
+    <nav class="navbar1">
+      <div class="logo">
+        <img src="https://seeklogo.com/images/J/jco-donuts-logo-84558D9128-seeklogo.com.png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Sign In</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#" class = "active">Stores</a></li>
+        <li><a href="#">Rewards</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-section">
+        <h1>Stores</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Find a store">
+        </div>
+        <div class="filters">
+            <span>Filters</span>
+            <div class="filters-buttons">
+              <button class="filter">24 Hours</button>
+              <button class="filter">Free WiFi</button>
+              <button class="filter">Less Crowded</button>
+              <button class="filter">Near You</button>
+            </div>
+        </div>
+        <div id="map" style="width: 100%; height: 400px;"></div>
+    </div>
+    <div class="places-near-you">
+        <h2>Places Near You</h2>
+        <div class="places-container">
+          <div class="place-box">
+            <span class="pin">📍</span>
+            <p>Location 1: JCO - Paya Lebar Square
+                60 Paya Lebar Road, #01-78,79,K2
+                Singapore — 409051
+                10am to 10pm</p>
+          </div>
+          <div class="place-box">
+            <span class="pin">📍</span>
+            <p>Location 2: JCO - Bugis+
+                201 Victoria Street #01-03 Bugis+
+                Singapore — 188067
+                10am to 10pm</p>
+          </div>
+          <div class="place-box">
+            <span class="pin">📍</span>
+            <p>Location 3: JCO - Tampines Mall
+                4 Tampines Central #01-38
+                Singapore — 529510
+                10am to 10pm</p>
+          </div>
+        </div>
+      </div>
+         
+    </header>
+    <script src="stores.js"></script>
+  </body>
+  </html>
+  

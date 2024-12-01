@@ -1,0 +1,346 @@
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+.logo img { 
+    max-height: 50px;
+}
+/* Logo Container */
+.logo {
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+}
+
+
+/* Navbar 1 (Logo & Main Links) */
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    font-weight: 600; /* Thicker font */
+}
+
+.logo img {
+    max-height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-left: 40px;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around; /* Evenly space the navigation links */
+}
+
+/* Individual Link Items */
+.nav-links li {
+    margin-right: 20px; /* Space between links */
+}
+
+/* Navigation Links Styles */
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 45px;
+}
+
+/* Active Link Styles */
+.nav-links a.active {
+    background-color: #ff6b00;
+    color: #fff;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    position: relative;
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    list-style-type: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+    .nav-links li:nth-child(n+4) {
+        display: none; /* Hide links after the first 3 */
+    }
+
+    .hamburger-menu {
+        display: inline-block; /* Show hamburger menu */
+    }
+}
+
+
+/* Navbar 2 Styles */
+.navbar2 {
+    background-color: #fff;
+}
+
+/* Container for Navbar 2 (Title & Search Bar) */
+.navbar2-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.page-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.button img{
+    max-height:10px
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    font-size: 1rem;
+     font-family: 'Josefin Sans', sans-serif;
+}
+
+.search-bar button {
+    background-color: #ff6b00;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #ff4500;
+}
+
+
+/* Sub Navigation */
+.sub-nav {
+    display: flex;
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
+
+.sub-nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.sub-nav a.active {
+    border-bottom: 3px solid #ff6b00;
+}
+  
+  /* Navigation Styles (from previous example) */
+  
+/* Welcome Banner */
+.welcome-banner {
+    color: #ff6b00;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden; /* Prevents content from spilling out */
+  }
+  
+  .rectangle-image {
+    width: 100%; /* Ensures it spans the full width of the banner */
+    height: 9cm; /* Set the fixed height for the banner */
+
+    overflow: hidden; /* Prevents overflow of the image */
+    display: flex; /* Centers the image horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Optional: Adds a clean background */
+  }
+  
+  .rectangle-image img {
+    width: auto; /* Ensures the width scales properly */
+    height: 100%; /* Scales the height to fit */
+    object-fit: contain; /* Prevents cropping and ensures visibility of the entire image */
+  }
+  
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto; /* Center container */
+    gap: 1.5rem; /* Space between cards */
+    max-width: 80%; /* Adjust container width */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Individual Cards */
+.card {
+    flex: 1; /* Cards take equal space */
+    max-width: 30%; /* Ensure three cards fit in one row */
+    height: auto; /* Adjust height automatically */
+    overflow: hidden; /* Prevent overflow */
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+}
+
+/* Card Image */
+.card img {
+    width: 100%; /* Image fills the card width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Scale image without distortion */
+    border-radius: 8px; /* Match the card's border-radius */
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+  
+/* Title Styling */
+.section-title {
+    margin-left: 3cm;
+    color: #ff6b00;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 50px; /* Add extra spacing above the headers */
+}
+
+/* Grid Container */
+.mini-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5cm, 1fr)); /* Max 4 boxes per row */
+    gap: 1.5rem; /* Space between boxes */
+    margin-left: 3cm; /* Align with title margin */
+    margin-right: 3cm; /* Ensure equal spacing on the right */
+    margin-top: 2rem; /* Space between title and grid */
+}
+
+/* Mini Box Styling */
+.mini-box {
+    width: 100%; /* Responsive width */
+    height: 5cm; /* Fixed height */
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Interactive hover effect */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Mini Box Hover Effect */
+.mini-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the box */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+
+/* Grid Container (Reusable) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5cm, 1fr)); /* Max 4 boxes per row */
+    gap: 1.5rem;
+    margin-left: 3cm; /* Align with title margin */
+    margin-right: 3cm;
+    margin-top: 2rem;
+}
+
+
+
+/* Mini Box Image */
+.mini-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .card-container, .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .mini-box {
+        max-width: 90%;
+    }
+}
+
+.search-bar button img {
+    max-height: 20px;
+    width: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #ff6b00;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.mini-box:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+/* Footer Placeholder */
+.footer-space {
+    height: 5cm; /* Placeholder space for the footer */
+    margin-top: 3rem; /* Space above the footer */
+}
+
+    

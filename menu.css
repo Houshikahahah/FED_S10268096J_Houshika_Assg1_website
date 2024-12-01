@@ -1,0 +1,197 @@
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+.logo img {
+    max-height: 50px;
+}
+/* Logo Container */
+.logo {
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+}
+
+
+/* Navbar 1 (Logo & Main Links) */
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    font-weight: 600; /* Thicker font */
+}
+
+.logo img {
+    max-height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-left: 40px;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around; /* Evenly space the navigation links */
+}
+
+/* Individual Link Items */
+.nav-links li {
+    margin-right: 20px; /* Space between links */
+}
+
+/* Navigation Links Styles */
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 45px;
+}
+
+/* Active Link Styles */
+.nav-links a.active {
+    background-color: #ff6b00;
+    color: #fff;
+}
+
+/* Navbar 2 Styles */
+.navbar2 {
+    background-color: #fff;
+}
+
+/* Container for Navbar 2 (Title & Search Bar) */
+.navbar2-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.page-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.button img{
+    max-height:10px
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    font-size: 1rem;
+     font-family: 'Josefin Sans', sans-serif;
+}
+
+.search-bar button {
+    background-color: #ff6b00;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #ff4500;
+}
+
+
+/* Sub Navigation */
+.sub-nav {
+    display: flex;
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
+
+.sub-nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.sub-nav a.active {
+    border-bottom: 3px solid #ff6b00;
+}
+
+.section-title {
+    margin-left: 3cm;
+    color: #ff6b00;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 50px; /* Add extra spacing above the headers */
+}
+
+/* Grid Container */
+.mini-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5cm, 1fr)); /* Max 4 boxes per row */
+    gap: 1.5rem; /* Space between boxes */
+    margin-left: 3cm; /* Align with title margin */
+    margin-right: 3cm; /* Ensure equal spacing on the right */
+    margin-top: 2rem; /* Space between title and grid */
+}
+
+/* Mini Box Styling */
+.mini-box {
+    width: 100%; /* Responsive width */
+    height: 5cm; /* Fixed height */
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Interactive hover effect */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Mini Box Hover Effect */
+.mini-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the box */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+
+/* Grid Container (Reusable) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5cm, 1fr)); /* Max 4 boxes per row */
+    gap: 1.5rem;
+    margin-left: 3cm; /* Align with title margin */
+    margin-right: 3cm;
+    margin-top: 2rem;
+}
+
+
+
+/* Mini Box Image */
+.mini-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

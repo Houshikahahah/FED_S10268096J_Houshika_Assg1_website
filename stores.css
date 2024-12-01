@@ -1,0 +1,201 @@
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+.logo img {
+    max-height: 50px;
+}
+/* Logo Container */
+.logo {
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+}
+
+
+/* Navbar 1 (Logo & Main Links) */
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    font-weight: 600; /* Thicker font */
+}
+
+.logo img {
+    max-height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-left: 40px;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around; /* Evenly space the navigation links */
+}
+
+/* Individual Link Items */
+.nav-links li {
+    margin-right: 20px; /* Space between links */
+}
+
+/* Navigation Links Styles */
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 45px;
+}
+
+/* Active Link Styles */
+.nav-links a.active {
+    background-color: #ff6b00;
+    color: #fff;
+}
+  
+  main {
+    padding: 20px;
+  }
+  
+  .search-section h1 {
+    font-size: 24px;
+    margin-left: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+ .search-bar {
+    margin: 10px 0;
+  }
+  
+  .search-bar input {
+    width: 25%;
+    padding: 10px;
+    background-color: #ddd;
+    border: 1.5px solid #ff6b00;
+    border-radius: 10px;
+  }
+  
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 500px;
+    margin-top: -50px;
+  }
+  
+  .filters span {
+    font-weight: bold;
+    color: #ff6b00; /* Orange color for the "Filters" label */
+    margin-bottom: 5px;
+  }
+  .filters-buttons {
+    display: flex;
+    gap: 15px; /* Space between the filter options */
+  }
+
+  .filters .filter {
+    font-weight: 600;
+    color: grey;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 15px;
+    position: relative;
+  }
+.filters .filter.active {
+  color: black;
+}
+
+  .filters .filter.active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: orange; /* Orange underline for active filters */
+  }
+
+  
+  
+.filters .filter:hover {
+  color: black;
+}
+
+.filters .filter:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+  }
+
+  
+  #map {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 60px;
+  }
+  
+  
+  .places-near-you {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #333;
+}
+
+.places-near-you h2 {
+    font-size: 20px;
+    color: #ff6b00; /* Orange color for the heading */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.places-container {
+    display: flex;
+    justify-content: flex-start; /* Align cards to the left */
+    gap: 15px; /* Add space between cards */
+}
+
+.place-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f9f9f9; /* Light gray background for the box */
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px; /* Set a fixed width for the cards */
+    height: 120px; /* Set a fixed height for the cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.place-box .pin {
+    font-size: 1.5rem;
+    color: #ff6b00; /* Orange pin color */
+    margin-bottom: 10px;
+}
+
+.place-box p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
